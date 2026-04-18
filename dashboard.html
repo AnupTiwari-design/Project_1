@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Title -->
+        <h2>Welcome to Dashboard</h2>
+
+        <!-- Username -->
+        <p id="welcomeUser"></p>
+
+        <!-- Clock -->
+        <p id="clock"></p>
+
+        <!-- Progress -->
+        <h3>Progress</h3>
+        <div class="progress">
+            <div class="bar"></div>
+        </div>
+
+        <!-- Todo Section -->
+        <div class="todo">
+            <h3>Your Tasks</h3>
+
+            <div class="task-input">
+                <input type="text" id="taskInput"
+                 placeholder="Enter task...">
+                <button id="addTask">Add</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- Buttons -->
+        <div class="actions">
+            <button id="modeBtn">Toggle Mode</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

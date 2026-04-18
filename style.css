@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* FIXED */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container{
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 20px;
+    color: #1e5bb8;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #1e5bb8;
+    color: white;
+    cursor: pointer;
+}
+
+/* FIXED IDs */
+#taskInput{
+    padding: 8px;
+}
+
+#addTask{
+    background-color: #4cafef;
+}
+
+/* FIXED DONE */
+.done{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* DARK MODE */
+.dark{
+    background: #111;
+    color: white;
+}
+
+.dark .container{
+    background: rgba(255,255,255,0.1);
+}
